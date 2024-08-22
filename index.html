@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReaprRepacks Official Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/LogoV2White.png" alt="Logo" class="logo-img">
+            <h1 class="logo-text">ReaprRepacks</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="./pages/about" class="nav-link">About</a>
+            <a href="./pages/updates" class="nav-link">Updates</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <p>Welcome to the ReaprRepacks official Website!</p>
+            <input type="text" id="searchInput" placeholder="Search games..." onkeydown="searchImages()" onkeypress="searchImages()">
+            <div class="gameimages">
+                <a href="pages/games/slimerancher">
+                    <img src="assets/games/slimerancher.jpg" alt="Slime Rancher" class="image">
+                </a>
+                <a href="pages/games/palworld">
+                    <img src="assets/games/palworldgame.jpg" alt="Palworld" class="image">
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

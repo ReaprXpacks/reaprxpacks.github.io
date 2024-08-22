@@ -1,0 +1,267 @@
+:root {
+    --main-color: #FD6987; /* Change this variable to set the main color */
+    --onedrive-color: rgb(20, 144, 223);
+    --google-drive-color: rgb(15, 157, 88);
+    --links-down-color: rgb(237, 52, 25);
+    --mediafire-color: rgb(0, 112, 240);
+    --doodrive-color: rgb(94, 114, 228);
+    --qiwi-color: rgb(148, 135, 251);
+    --mega-color: rgb(255, 87, 96);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; /* Center all text on the page */
+    background: linear-gradient(to bottom, var(--main-color), black); /* Gradient background */
+    background-attachment: fixed; /* Keep the gradient fixed even when scrolling */
+    background-size: cover; /* Ensure the gradient covers the entire background */
+    margin: 0;
+    padding: 0;
+    color: white; /* Text color */
+}
+
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+header .logo-img {
+    max-width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo-text {
+    font-size: 2em;
+    color: rgb(255, 255, 255); /* Logo text color */
+}
+
+.content {
+    padding: 20px;
+}
+
+.gameimages {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 10px;
+}
+
+.gameimages img {
+    border-radius: 10px; /* Slightly rounded corners */
+    border: 3px solid var(--main-color); /* Main color border */
+    max-width: 300px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.game-info {
+    margin-top: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.nav-link:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.bold {
+    font-weight: bold; /* Class for bold text */
+}
+
+/* Yes i know i reused old code. fuck off. */
+
+.mirror-image {
+    width: 30px; /* Adjust the width of the image */
+    margin-right: 5px; /* Adjust the margin as needed */
+    margin-top: 0px;
+    height: auto;
+}
+
+
+.mirror-button {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background-color: purple;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, outline 0.3s;
+    outline: none;
+}
+
+.mirror-button:hover {
+    background-color: #333;
+    outline: 2px solid purple;
+}
+
+.mirror-button-onedrive {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: var(--onedrive-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, outline 0.3s;
+    outline: none;
+}
+
+.mirror-button-onedrive:hover {
+    background-color: #333;
+    outline: 2px solid var(--onedrive-color);
+}
+
+.nfo-button {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, outline 0.3s;
+    outline: none;
+}
+
+.nfo-button:hover {
+    background-color: #333;
+    outline: 2px solid var(--main-color);
+}
+
+.mirror-button-gdrive {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--google-drive-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, outline 0.3s;
+    outline: none;
+}
+
+.mirror-button-gdrive:hover {
+    background-color: #333;
+    outline: 2px solid var(--google-drive-color);
+}
+
+.mirror-button-mediafire {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--mediafire-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, outline 0.3s;
+    outline: none;
+}
+
+.mirror-button-mediafire:hover {
+    background-color: #333;
+    outline: 2px solid var(--mediafire-color);
+}
+
+.mirror-button-linksdown {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--links-down-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, outline 0.3s;
+    outline: none;
+}
+
+.mirror-button-linksdown:hover {
+    background-color: #333;
+    outline: 2px solid var(--links-down-color);
+}
+
+.mirror-button-doodrive {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--doodrive-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, outline 0.3s;
+    outline: none;
+}
+
+.mirror-button-doodrive:hover {
+    background-color: #333;
+    outline: 2px solid var(--doodrive-color);
+}
+
+.mirror-button-qiwi {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--qiwi-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, outline 0.3s;
+    outline: none;
+}
+
+.mirror-button-qiwi:hover {
+    background-color: #333;
+    outline: 2px solid var(--qiwi-color);
+}
+
+.mirror-button-mega {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--mega-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, outline 0.3s;
+    outline: none;
+}
+
+.mirror-button-mega:hover {
+    background-color: #333;
+    outline: 2px solid var(--mega-color);
+}
+
+.mirror-button,
+.mirror-button-onedrive,
+.mirror-button-linksdown,
+.mirror-button-qiwi,
+.mirror-button-mediafire,
+.mirror-button-doodrive,
+.mirror-button-mega,
+.mirror-button-gdrive {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+

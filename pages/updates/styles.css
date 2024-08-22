@@ -1,0 +1,93 @@
+/* styles.css */
+
+:root {
+    --main-color: #17df1a;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--main-color), black) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+header .logo-img {
+    max-width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo-text {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.announcement {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 10px auto 0;
+}
+
+.announcement-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.crown-emoji {
+    margin-left: 3px;
+    color: red;
+}
+
+.author-info {
+    position: relative; /* Create a positioning context for the pseudo-element */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.author-name {
+    font-weight: bold;
+    color: red;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    background-image: url("../../assets/users/red.gif");
+    position: relative; /* Position the text relatively within the container */
+}
+
+
+

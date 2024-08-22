@@ -1,0 +1,77 @@
+:root {
+    --main-color: #17df1a; /* Change this variable to set the main color */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; /* Center all text on the page */
+    background: linear-gradient(to bottom, var(--main-color), black) no-repeat; /* Gradient background */
+    background-size: cover; /* Ensure the gradient covers the entire background */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    color: white; /* Text color */
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+header .logo-img {
+    max-width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo-text {
+    font-size: 2em;
+    color: rgb(255, 255, 255); /* Logo text color */
+}
+
+.content {
+    padding: 20px;
+}
+
+.logoimage {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 10px;
+}
+
+.logoimage img {
+    border-radius: 10px; /* Slightly rounded corners */
+    border: 3px solid #000; /* Main color border */
+    max-width: 200px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.bold {
+    font-weight: bold; /* Class for bold text */
+}
